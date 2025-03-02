@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "band_members",
+  "info": {
+    "singularName": "band-member",
+    "pluralName": "band-members",
+    "displayName": "Band Member"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "icon_name": {
+      "type": "string",
+      "required": true
+    },
+    "headshot": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "instrument": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

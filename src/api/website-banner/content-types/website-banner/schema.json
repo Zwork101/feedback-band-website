@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "website_banners",
+  "info": {
+    "singularName": "website-banner",
+    "pluralName": "website-banners",
+    "displayName": "Website Banner"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "full_band": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
