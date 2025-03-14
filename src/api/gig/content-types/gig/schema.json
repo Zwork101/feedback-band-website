@@ -4,7 +4,8 @@
   "info": {
     "singularName": "gig",
     "pluralName": "gigs",
-    "displayName": "Gig"
+    "displayName": "Gig",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,16 +15,17 @@
       "type": "string",
       "required": true
     },
-    "date": {
-      "type": "date",
-      "required": true
-    },
-    "time": {
-      "type": "time"
-    },
     "link": {
       "type": "string",
-      "regex": "/^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$/"
+      "regex": "https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)"
+    },
+    "date": {
+      "type": "datetime",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "required": true
     }
   }
 }

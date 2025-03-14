@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "abouts",
+  "info": {
+    "singularName": "about",
+    "pluralName": "abouts",
+    "displayName": "About",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "long_summary": {
+      "type": "richtext",
+      "required": true,
+      "minLength": 250
+    },
+    "short_summary": {
+      "type": "string",
+      "required": true
+    },
+    "summary_bold": {
+      "type": "string",
+      "required": true
+    },
+    "youtube_embed": {
+      "type": "string",
+      "required": true,
+      "regex": "(?:https?:\\/\\/)?(?:www\\.)?youtu(?:\\.be\\/|be.com\\/\\S*(?:watch|embed)(?:(?:(?=\\/[-a-zA-Z0-9_]{11,}(?!\\S))\\/)|(?:\\S*v=|v\\/)))([-a-zA-Z0-9_]{11,})"
+    }
+  }
+}

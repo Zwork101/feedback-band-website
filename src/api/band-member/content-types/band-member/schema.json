@@ -4,7 +4,8 @@
   "info": {
     "singularName": "band-member",
     "pluralName": "band-members",
-    "displayName": "Band Member"
+    "displayName": "Band Member",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,20 +15,27 @@
       "type": "string",
       "required": true
     },
-    "icon_name": {
-      "type": "string",
-      "required": true
-    },
     "headshot": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "instrument": {
       "type": "string",
+      "required": true
+    },
+    "icon_name": {
+      "type": "enumeration",
+      "enum": [
+        "flaticon-karaoke",
+        "flaticon-saxophone",
+        "flaticon-electric-guitar",
+        "flaticon-drum-set"
+      ],
       "required": true
     }
   }

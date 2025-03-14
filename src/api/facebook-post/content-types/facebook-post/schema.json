@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "facebook_posts",
+  "info": {
+    "singularName": "facebook-post",
+    "pluralName": "facebook-posts",
+    "displayName": "Facebook Post"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "post": {
+      "type": "richtext",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

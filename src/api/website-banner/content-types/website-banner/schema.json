@@ -4,13 +4,23 @@
   "info": {
     "singularName": "website-banner",
     "pluralName": "website-banners",
-    "displayName": "Website Banner"
+    "displayName": "Site Data",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "attributes": {
     "full_band": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "logo": {
       "allowedTypes": [
         "images",
         "files"
@@ -18,6 +28,18 @@
       "type": "media",
       "multiple": false,
       "required": true
+    },
+    "title": {
+      "type": "string",
+      "default": "Feedback",
+      "required": true,
+      "maxLength": 12
+    },
+    "keywords": {
+      "type": "text"
+    },
+    "short_description": {
+      "type": "text"
     }
   }
 }
